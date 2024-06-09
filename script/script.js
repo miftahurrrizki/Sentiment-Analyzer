@@ -1,9 +1,7 @@
-$(window).on('load', function() {
-    $(".loader-wrapper").fadeOut("slow");
-});
-
-// buat button kirim pas diklik
 function showOutput() {
-    // Mengubah gaya elemen <p> untuk menampilkan teks
-    document.querySelector('.output p').style.display = 'block';
+    // Setelah 1 detik, sembunyikan loader dan tampilkan output
+    setTimeout(function() {
+        // $(".output .loader-wrapper").fadeOut("fast");
+        document.querySelector('.container-output .output p').style.display = 'block';
+    }, 500); // 1000ms = 1 detik
 }

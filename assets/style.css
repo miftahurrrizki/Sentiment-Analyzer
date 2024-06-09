@@ -72,6 +72,11 @@ body {
     height: 30px;
     width: 70px;
 }
+/* .bi-envelope {
+    color: #0a0a0a;
+    border-radius: 10px;
+    fill: #afbfc9;
+} */
 .logo {
     position: relative;
     text-align: center;
@@ -215,6 +220,28 @@ input {
     color: #ffffff;
     border: 1px solid #555555; */
 }
+textarea {
+    text-align: start;
+    margin-left: 50px;
+    padding-top: 0px;
+    border-radius: 5px;
+    width: 430px;
+    height: 70px;
+    margin-top: 7px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 0.8rem;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    outline: none;
+    resize: none;
+    overflow: auto;
+    background-color: #111111;
+    color: #ffffff;
+    /* background-color: #555555;
+    color: #ffffff;
+    border: 1px solid #555555; */
+}
 
 .text-input {
     text-align: 20px;
@@ -233,7 +260,7 @@ input {
     padding: 5px;
     margin-top: 10px;
     border-radius: 22px;
-    background-color: #ffffff;
+    background-color: none;
     border-color: #555555;
     border-width: 2px;
     border-style: solid;
@@ -310,7 +337,7 @@ button:hover {
     padding: 5px;
     margin-top: 10px;
     border-radius: 22px;
-    background-color: #ffffff;
+    background-color: none;
     border-color: #555555;
     border-width: 2px;
     border-style: solid;
@@ -318,7 +345,7 @@ button:hover {
 
 p{
     text-align: start;
-    color: #1e1e1e;
+    color: #ffffff;
     /* margin-left: 50px; */
     padding-top: 0px;
     border-radius: 5px;
@@ -328,6 +355,7 @@ p{
     margin-left: 15px;
     margin-right: 15px;
     font-size: 0.8rem;
+    font-family: 'Inter', sans-serif;
     border: none;
     outline: none;
     overflow: auto;
@@ -345,8 +373,9 @@ p{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.8);
+    background: none;
     display: flex;
+    margin-top: 290px;
     justify-content: center;
     align-items: center;
     z-index: 9999;
@@ -364,3 +393,5 @@ p{
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+/* FOR RESPONSIVE */
