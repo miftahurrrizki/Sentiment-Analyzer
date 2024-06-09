@@ -21,24 +21,16 @@ body {
     background-color: #111111;
     margin: auto;
     padding-left: -300px;
-    margin-top: -8px;
+    margin-top: 20px;
     /* margin: auto;
     padding:1% 1% 1% 1%;
     margin-top: 10px; */
     border-radius: 5px;
 }
-/* .garis {
-    width: 474px;
-    height: 1px;
-    margin:auto;
-    margin-top: 50px;
-    padding: 5px;
-    background-color: #777777;
-} */
 /* Header styles */
 .header {
     text-align: center;
-    /* background-color: #333333; */
+    /* background-color: #ea1212; */
     width: 450px;
     height: 100px;
     margin: auto;
@@ -46,25 +38,47 @@ body {
     margin-top: 10px;
     border-radius: 5px;
 }
-.kotakHeader {
-    background-color: none;
+/* .kotakHeader {
+    background-color: #f70000;
     width: 474px;
     height: 120px;
-    /* margin:auto; */
     padding: 5px;
     margin-top: 10px;
     border-radius: 2px;
+} */
+.kotakHeader img{
+    width: 476px;
+    height: 150%;
     z-index: -1;
+    object-fit: cover;
+}
+.foldot {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    margin-top: -170px;
+    margin-left: 406px;
+    z-index: -1;
+}
+/* .foldot bi bi-three-dots {
+    color: #ffffff;
+    border-radius: 10px;
+} */
+.foldot button{
+    border-radius: 12px;
+    height: 30px;
+    width: 70px;
 }
 .logo {
     position: relative;
     text-align: center;
-    background-color: #dfdfdf;
     width: 117px;
     height: 117px;
-    margin-top: -60px;
+    margin-top: -67px;
     margin-left: 20px;
     border-radius: 50%;
+    border : 5px solid #111111;
 }
 .logo img{
     width: 100%;
@@ -77,31 +91,63 @@ body {
     font-size: 20px;
     font-stretch: ultra-expanded;
     letter-spacing: 0.7px;
-    margin-top: 10px;
+    margin-top: 8px;
     margin-left: 15px;
 }
 .username {
     text-align: left;
     color: #a9a8a8;
     font-weight: normal;
-    font-size: 13px;
+    font-size: 14px;
     margin-top: 2px;
     margin-left: 15px;
 }
+
 .link {
     text-align: left;
     color: #ffffff;
     font-weight: normal;
     font-size: 14px;
-    margin-top: 12px;
+    margin-top: 20px;
     margin-left: 15px;
 }
 .link a {
     text-decoration: none;
     color: #4e7cf9;
 }
-
-
+.loc-join {
+    /* display: flex;
+    flex-direction: row; */
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    margin-left: -110px;
+    color: #a9a8a8;
+    font-size: 14px;
+    font-weight: normal;
+}
+.bi-calendar-week {
+    margin-left: 25px;
+}
+.infoFollow {
+    height: 30px;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 153px;
+}
+.infoFollow span {
+    color: #ffffff;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 4px;
+}
+.infoFollow p {
+    color: #b6b5b5;
+    font-weight: normal;
+    margin-left: 12px;
+    margin-right: 5px;
+    word-spacing: 30px;
+}
 /* Title styles */
 .title {
     text-align: center;
@@ -133,7 +179,7 @@ body {
     width: 450px;
     margin: auto;
     padding: 5px;
-    margin-top: 250px;
+    margin-top: 255px;
     margin-left: 90px;
     /* border-radius: 5px;
     border-color: #555555;
@@ -189,6 +235,7 @@ input {
 h3 {
     text-align: 20px;
     margin: 2px;
+    font-size: 20px;
     margin-left: 11px;
     margin-bottom: 0px;
     padding: 5px;
@@ -197,11 +244,12 @@ h3 {
 }
 
 /* Button styles */
-button {
+.buttonKirim button {
     border: none;
     justify-content: center;
     text-align: center;
     background-color: #555555;
+    border-color: #ffffff;
     color: #ffffff;
     font-size: 0.8rem;
     padding: 5px;
@@ -209,15 +257,16 @@ button {
     width: 50px;
     height: 30px;
     margin-top: 10px;
-    margin-left: 400px;
+    margin-left: 410px;
     margin-right: auto;
     border-radius: 10px;
     transition: 0s;
 }
 
-button:hover {
-    background-color: #777777;
+.buttonKirim button:hover {
+    background-color: #fbfbfb;
     cursor: pointer;
+    color: #1e1e1e;
 }
 /* ----- END OF MAIN 1 ----- */
 
@@ -237,6 +286,7 @@ button:hover {
 .text-output {
     text-align: 20px;
     margin: 2px;
+    margin-top: -8px;
     margin-left: -9px;
     margin-bottom: 0px;
     padding: 5px;
@@ -246,7 +296,7 @@ button:hover {
 
 .container-output {
     width: 450px;
-    height: 100px;
+    height: 90px;
     margin: auto;
     padding: 5px;
     margin-top: 10px;
@@ -259,6 +309,7 @@ button:hover {
 
 p{
     text-align: start;
+    color: #1e1e1e;
         margin-left: 50px;
         padding-top: 0px;
         border-radius: 5px;
