@@ -161,7 +161,7 @@ body {
     font-weight: normal;
     margin-left: 12px;
     margin-right: 5px;
-    word-spacing: 30px;
+    word-spacing: 0px;
 }
 /* Title styles */
 .title {
