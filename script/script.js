@@ -5,11 +5,10 @@ function showOutput() {
         return;
     }
 
-    const corsProxy = 'https://cors-anywhere.herokuapp.com/';
     const apiUrl = 'http://57.155.53.48/predict/';
 
     $.ajax({
-        url: corsProxy + apiUrl,
+        url: apiUrl,
         type: 'POST',
         contentType: 'application/json',
         data: JSON.stringify({
