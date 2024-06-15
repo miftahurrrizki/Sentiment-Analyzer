@@ -21,7 +21,18 @@ function showOutput() {
         },
         success: function(response) {
             const output = response.predictions ? response.predictions[0] : { sentiment: 'No result found' };
-            $('#showOutput').text(`Sentiment: ${output.sentiment}`);
+
+            // Determine sentiment text based on output.sentiment
+            let sentimentText;
+            if (output.sentiment === 'Positive') {
+                sentimentText = 'Positive';
+            } else if (output.sentiment === 'Negative') {
+                sentimentText = 'Negative';
+            } else {
+                sentimentText = 'No result found';
+            }
+
+            $('#showOutput').text(`Tweet tersebut memiliki sentimen ${sentimentText}`);
         },
         error: function() {
             $('#showOutput').text('An error occurred while processing your request.');
