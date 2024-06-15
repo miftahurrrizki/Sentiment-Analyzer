@@ -2,11 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 /* Menyembunyikan elemen output pada awalnya */
-.output p {
-    display: none;
-}
 
-
+.container-output {
+    width: 450px;
+    height: 90px;
+    margin: auto;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 22px;
+    background-color: none;
+    border-color: #555555;
+    border-width: 2px;
+    border-style: solid;
+  }
 body {
     background-color: #1e1e1e;
     font-family: 'Inter', sans-serif;
@@ -330,18 +338,7 @@ button:hover {
     color: #ffffff;
 }
 
-.container-output {
-    width: 450px;
-    height: 90px;
-    margin: auto;
-    padding: 5px;
-    margin-top: 10px;
-    border-radius: 22px;
-    background-color: none;
-    border-color: #555555;
-    border-width: 2px;
-    border-style: solid;
-}
+
 
 p{
     text-align: start;

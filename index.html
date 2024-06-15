@@ -1,80 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tubes</title>
-    <link rel="icon" href="assets/favicon.png">
+    <link rel="icon" href="assets/favicon.png" />
     <!-- buat bootstrap -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="assets/style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
     <div class="container">
-        <!-- HEADER! -->
-        <div class="header">
-            <div class="kotakHeader">
-                <img src="assets\kotakHeader1.png" alt="Header">
-            </div>
-            <div class="logo">
-                <img src="assets\xLogo.png" alt="Logo">
-            </div>
-            <div class="nama">
-                Analisis Sentimen
-                <i class="bi bi-patch-check-fill"></i>
-            </div>
-            <div class="username">@sentimentanalyzer</div>
-            <div class="link">Dokumentasi Proyek: <a href="https://github.com/miftahurrrizki/Sentiment-Analyzer" target="_blank">www.github.com/dokumentasi/</a></div>
-            <div class="loc-join">
-                <i class="bi bi-geo-alt"></i> Bandung, Indonesia<i class="bi bi-calendar-week"></i>   Joined June 2024
-            </div>
-            <div class="foldot">
-                <!-- <div class="buttonDot">
-                    <button class="dm"><i class="bi bi-envelope"></i></button>
-                </div> -->
-                <div class="buttonFollow">
-                    <button>Follow</button>
-                </div>
-            </div>
-            <div class="infoFollow">
-                <p class="following"><span>3</span>following  <span>13.9M</span>followers</p>
-            </div>
-            <hr>
+      <!-- HEADER! -->
+      <div class="header">
+        <div class="kotakHeader">
+          <img src="assets/kotakHeader1.png" alt="Header" />
         </div>
-        <!-- END OF HEADER! -->
-        <div class="main1">
-            <h3 class="text-input">📍 Input Tweet</h3>
-            <div class="container-input">
-                <div class="input">
-                    <textarea spellcheck="false" placeholder="Masukkan tweet disini" rows="5"></textarea>
-                </div>
-            </div>
-            <div class="buttonKirim">
-                <button onclick="showOutput()">Kirim</button>
-            </div>
+        <div class="logo">
+          <img src="assets/xLogo.png" alt="Logo" />
         </div>
-        <!-- ---- end of main1 ---- -->
-        <div class="main2">
-            <h3 class="text-output">💡Output Analisis</h3>
-            <div class="container-output">
-                <div class="output">
-                    <p id="showOuput">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt esse commodi repellat, inventore est odio ab? Sapiente incidunt repellendus, reprehenderit nostrum dolor laborum molestias, quis labore modi eligendi magni ullam. </p>
-                </div>
-                <!-- <div class="loader-wrapper">
-                    <div class="loader"></div>
-                </div> -->
-            </div>
+        <div class="nama">
+          Analisis Sentimen
+          <i class="bi bi-patch-check-fill"></i>
         </div>
-        <!-- ---- end of main2 ---- -->
-        <!-- <div class="loader-wrapper">
-            <div class="loader"></div>
-        </div> -->
+        <div class="username">@sentimentanalyzer</div>
+        <div class="link">
+          Dokumentasi Proyek:
+          <a
+            href="https://github.com/miftahurrrizki/Sentiment-Analyzer"
+            target="_blank"
+            >www.github.com/dokumentasi/</a
+          >
+        </div>
+        <div class="loc-join">
+          <i class="bi bi-geo-alt"></i> Bandung, Indonesia<i
+            class="bi bi-calendar-week"
+          ></i>
+          Joined June 2024
+        </div>
+        <div class="foldot">
+          <div class="buttonFollow">
+            <button>Follow</button>
+          </div>
+        </div>
+        <div class="infoFollow">
+          <p class="following">
+            <span>3</span> following <span>13.9M</span> followers
+          </p>
+        </div>
+        <hr />
+      </div>
+      <!-- END OF HEADER! -->
+      <div class="main1">
+        <h3 class="text-input">📍 Input Tweet</h3>
+        <div class="container-input">
+          <div class="input">
+            <textarea
+              spellcheck="false"
+              placeholder="Masukkan tweet disini"
+              rows="5"
+              id="tweetInput"
+            ></textarea>
+          </div>
+        </div>
+        <div class="buttonKirim">
+          <button onclick="showOutput()">Kirim</button>
+        </div>
+      </div>
+      <!-- ---- end of main1 ---- -->
+      <div class="main2">
+        <h3 class="text-output">💡Output Analisis</h3>
+        <div class="container-output">
+          <div class="output">
+            <p id="showOutput"></p>
+          </div>
+        </div>
+      </div>
+      <!-- ---- end of main2 ---- -->
     </div>
     <!-- bootstrap js -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script src="script/script.js" defer></script>
-</body>
+  </body>
 </html>

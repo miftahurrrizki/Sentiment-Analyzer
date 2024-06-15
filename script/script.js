@@ -1,7 +1,30 @@
 function showOutput() {
-    // Setelah 1 detik, sembunyikan loader dan tampilkan output
-    setTimeout(function() {
-        // $(".output .loader-wrapper").fadeOut("fast");
-        document.querySelector('.container-output .output p').style.display = 'block';
-    }, 500); // 1000ms = 1 detik
+    const inputText = $('#tweetInput').val();
+    if (inputText.trim() === '') {
+        alert('Please enter a tweet.');
+        return;
+    }
+
+    const corsProxy = 'https://cors-anywhere.herokuapp.com/';
+    const apiUrl = 'http://57.155.53.48/predict/';
+
+    $.ajax({
+        url: corsProxy + apiUrl,
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify({
+            texts: [inputText],
+            model_name: 'v1'
+        }),
+        beforeSend: function() {
+            $('#showOutput').text('Processing...');
+        },
+        success: function(response) {
+            const output = response.predictions ? response.predictions[0] : { sentiment: 'No result found' };
+            $('#showOutput').text(`Sentiment: ${output.sentiment}`);
+        },
+        error: function() {
+            $('#showOutput').text('An error occurred while processing your request.');
+        }
+    });
 }
