@@ -5,11 +5,11 @@ function showOutput() {
         return;
     }
 
-    const corsProxy = 'https://cors-anywhere.herokuapp.com/';
-    const apiUrl = 'http://57.155.22.50/predict/';
+    
+    const apiUrl = 'https://api-tubestm.azurewebsites.net/predict/';
 
     $.ajax({
-        url: corsProxy + apiUrl,
+        url: apiUrl,
         type: 'POST',
         contentType: 'application/json',
         data: JSON.stringify({
