@@ -5,11 +5,11 @@ function showOutput() {
         return;
     }
 
-    
+    const cors = 'https://cors-anywhere.herokuapp.com/';
     const apiUrl = 'https://api-tubestm.azurewebsites.net/predict/';
 
     $.ajax({
-        url: apiUrl,
+        url: cors + apiUrl,
         type: 'POST',
         contentType: 'application/json',
         data: JSON.stringify({
