@@ -6,7 +6,7 @@ Tweet Sentiment Analyzer is a web application designed to analyze the sentiment 
 
 - **Backend:**
   - Python
-  - FastAPI
+  - Flask
   - Scikit-learn
   - Tweepy
   - Pandas
@@ -32,7 +32,21 @@ Tweet Sentiment Analyzer is a web application designed to analyze the sentiment 
 
 ## Usage
 
-Access the web application to input tweets and view the sentiment analysis results in real-time. The deployed API handles the sentiment prediction and serves the results to the frontend.
+Before using this application, you need to activate CORS Anywhere on Heroku.
+
+1. Visit the CORS Anywhere website: [CORS Anywhere Heroku](https://cors-anywhere.herokuapp.com/)
+2. Press the "Request temporary access" button.
+
+After completing the above steps, you can use the application:
+
+1. **Access the Web Application:**
+   Open the deployed web application in your browser: [Tweet Sentiment Analyzer](https://sentiment-analyzer-tweet.vercel.app)
+
+2. **Input Tweets:**
+   Enter the tweet you want to analyze in the provided input field.
+
+3. **View Sentiment Analysis:**
+   Submit the tweet to receive and view the sentiment analysis results in real-time.
 
 ## Contribution
 
