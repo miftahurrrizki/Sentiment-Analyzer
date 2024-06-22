@@ -6,7 +6,7 @@ Tweet Sentiment Analyzer is a web application designed to analyze the sentiment 
 
 - **Backend:**
   - Python
-  - Flask
+  - FastAPI
   - Scikit-learn
   - Tweepy
   - Pandas
@@ -24,7 +24,6 @@ Tweet Sentiment Analyzer is a web application designed to analyze the sentiment 
 
 ## Features
 
-- Collects tweet data using the Twitter API
 - Cleans and preprocesses tweet data
 - Builds machine learning models using Bernoulli Naive Bayes and Logistic Regression
 - Provides an API for tweet sentiment prediction
