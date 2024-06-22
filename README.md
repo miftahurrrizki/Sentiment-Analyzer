@@ -8,7 +8,6 @@ Tweet Sentiment Analyzer is a web application designed to analyze the sentiment 
   - Python
   - FastAPI
   - Scikit-learn
-  - Tweepy
   - Pandas
   - Docker
   - Azure ML Studio
