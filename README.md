@@ -10,7 +10,7 @@ Tweet Sentiment Analyzer is a web application designed to analyze the sentiment 
   - Scikit-learn
   - Pandas
   - Docker
-  - Azure ML Studio
+  - Hugginface
 
 - **Frontend:**
   - HTML
@@ -18,7 +18,7 @@ Tweet Sentiment Analyzer is a web application designed to analyze the sentiment 
   - JavaScript
 
 - **Deployment:**
-  - API: Azure
+  - API: Huggingface
   - Website: Vercel
 
 ## Features
@@ -29,13 +29,6 @@ Tweet Sentiment Analyzer is a web application designed to analyze the sentiment 
 - User interface for inputting tweets and displaying sentiment analysis results in real-time
 
 ## Usage
-
-Before using this application, you need to activate CORS Anywhere on Heroku.
-
-1. Visit the CORS Anywhere website: [CORS Anywhere Heroku](https://cors-anywhere.herokuapp.com/)
-2. Press the "Request temporary access" button.
-
-After completing the above steps, you can use the application:
 
 1. **Access the Web Application:**
    Open the deployed web application in your browser: [Tweet Sentiment Analyzer](https://sentiment-analyzer-tweet.vercel.app)
