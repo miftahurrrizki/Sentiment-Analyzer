@@ -2,6 +2,9 @@
 
 Tweet Sentiment Analyzer is a web application designed to analyze the sentiment of tweets using machine learning technology. The project encompasses tweet data collection, data cleaning, machine learning model building, API creation, and user interface development.
 
+<img width="1176" height="917" alt="image" src="https://github.com/user-attachments/assets/e04a247f-2b2c-46fc-80df-525f90855b7b" />
+
+
 ## Technologies Used
 
 - **Backend:**
